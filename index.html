@@ -13,7 +13,8 @@
 
         <nav> <!--Seção de navegação do site.-->
             <ul>
-                <li> <a href="#sobre">Sobre mim</a></li> <!-- A href serve para colocar hiperlinks que serão redirecionados para as seções-->
+                <li> <a href="#sobre">Sobre mim</a></li>
+                <!-- A href serve para colocar hiperlinks que serão redirecionados para as seções-->
                 <li><a href="#projeto">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="https://www.google.com.br/" target="_blank">Google</a></li>
@@ -25,7 +26,11 @@
     </header>
     <section id="sobre">
         <H2>Sobre mim</H2>
-        <img src="./image-atual.jpeg" alt="Imagem do perfil" width="300px" height=" 300px" title="Imagem do perfil Haslan">
+        <img src="./image-atual.jpeg" alt="Imagem do perfil" width="280px" height=" 300px"
+            title="Imagem do perfil Haslan">
+        <!-- title tem a funcionalidade de colocar um titulo em baixo da imagem
+         width - largura
+         height - altura - recomendado 300px ou ajustar -->
 
         <article> <!-- artigo com um P paragrafo com sua descrição-->
             <p>
@@ -62,17 +67,46 @@
             </p>
         </article>
     </section>
-    <footer> <!--footer, é o codigo utilizado para definir o rodapé de uma pagina ou seção, contendo informações como contato, links, e copyright-->
-        
+    <footer>
+        <!--footer, é o codigo utilizado para definir o rodapé de uma pagina ou seção, contendo informações como contato, links, e copyright-->
+
         <section id="contato">
             <h2>Contato</h2>
             <p>tem um projeto em mente? entre em contato.</p>
+            <form action=""> <!--formulario-->
+                <label for=">Nome">Nome: </label> <!--label é o campo onde vai ser digitado-->
+                <input type="text" id="name=" nome="nome" required> <!--input é o campo para preencher -->
+               
+                <label for="email-">E-mail: </label>
+                <input type="email" id="email" email="email" required>
+               
+                <label for="telefone-">Telefone: </label>
+                <input type="text" id="telefone" tel="telefone">
+
+                <label for="assunto-">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <br>
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="70" rows="1" required></textarea><br>
+                <input type="date">
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? fique por dentro.</label>
+                <br>
+                <input type="submit" value="Enviar mensagem">
+
+                
+            </form>
             <address>
-                Email: <a href="mailto:haslansalgado@hotmail.com">haslansalgado@hotmail.com</a> <br>
-                <!-- colocar link no site no caso de e-mail-->
-                Telefone: <a href="tel:+5548920034266 ">48-92003-4266</a> <!-- "a" com refereência inserir -->
+            Email: <a href="mailto:haslansalgado@hotmail.com">haslansalgado@hotmail.com</a> <br>
+            <!-- colocar link no site no caso de e-mail-->
+            Telefone: <a href="tel:+5548920034266 ">48-92003-4266</a> <!-- "a" com refereência inserir -->
             </address>
-            <p>Copyright © Haslan Salgado</p>
+            <p>Copyright © 2026</p>
         </section>
     </footer>
 </body>
