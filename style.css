@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    }
+
+    header h1{
+        font-size: 2em;
+    }
+
+    header h2{
+        font-size: 1.5em;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin-top:15px;
+        padding: 0;
+    }
+
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #327c3f;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 8px; /* cantos arredondados para complementar a sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra suave abaixo do elemento */
+}
+
+.sobre-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sobre-container img {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.sobre-container article {
+    flex: 1 1 0;
+    min-width: 250px;
+}
+
+aside {
+    margin-top: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-left: 4px solid #327c3f;
+}
+
+#projeto article {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #343a40;
+    color: white;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+form input[type="submit"]{
+    background-color: #343a40;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    background-color: #327c3f;
+}
+
+address {
+    margin-top: 20px;
+    font-style: normal;
+
+}
+
+.meu-rodape {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+
+.btn-whatsapp i {
+    font-size: 28px; /* tamanho do ícone */
+    margin-right: 8px;
+}
+
+.btn-linkedin i {
+    font-size: 28px; /* tamanho do ícone */
+    margin-right: 8px;
+}
+
+.mensagem-sucesso {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+    display: none;
+    font-weight: bold;
+}
